@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@300&family=Livvic:wght@100&family=Lobster&family=Open+Sans+Condensed:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Abel;
+}
+
+
+.heading{
+    background:  radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: black;
+    margin-bottom: 10px;
+    padding: 20px 0 20px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.content .heading h1{
+    font-family:Abel;
+    font-size: 2.5rem;
+}
+.content h2{
+    padding-left: 40px;
+    margin-top: 60px;
+    font-size: 1.8rem;
+}
+.content p{
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-family: Livvic;
+    justify-content: center;
+    align-items: center;
+}
+.content ul{
+    padding-left: 40px;
+    padding-top: 25px;
+
+}
+.content  li{
+    margin-left: 30px;
+    font-family: Livvic;
+    font-size: 1.2rem;
+}
+.content h2{
+    margin-top: 33px;
+}
+
