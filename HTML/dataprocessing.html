@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Processing</title>
+    <link rel="stylesheet" href="../CSS/dataprocessing .css">
+</head>
+<body>
+    <div class="content">
+
+        <div class="heading">
+            <h1>&mdash;Software engineering&mdash; </h1>
+        </div>
+        <img style="width: 100%; height: 60vh;" src="../images/dataprocessing1.png" alt="">
+        <b>
+            <h2>Data Pre-Processing</h2>
+            <p><i>In any Machine Learning process, Data Preprocessing is that step in which the data gets transformed, or Encoded, to bring it to such a state that now the machine can easily parse it. In other words, the features of the data can now be easily interpreted by the algorithm.</i>
+            <br>
+            Data preprocessing is a process of preparing the raw data and making it suitable for a machine learning model. It is the first and crucial step while creating a machine learning model.
+            <br>
+            When creating a machine learning project, it is not always a case that we come across the clean and formatted data. And while doing any operation with data, it is mandatory to clean it and put in a formatted way. So for this, we use data preprocessing task.
+
+            </p>
+            <img style="margin-left: 27%; margin-top: 50px;" src="../images/dp2.png" alt="">
+            <h2>Why is Data preprocessing important?</h2>
+            <p>Preprocessing of data is mainly to check the data quality. The quality can be checked by the following:
+                <br>
+            </p>
+            <ul>
+                <li><h3>Accuracy</h3> 
+                <p>To check whether the data entered is correct or not.</p></li>
+                
+                <li><h3>Completeness:</h3> 
+                <p>To check whether the data is available or not recorded.</p></li>
+                <li><h3>Consistency:</h3>
+                <p>To check whether the same data is kept in all the places that do or do not match.</p></li>
+                <li><h3>Timeliness:</h3>
+                <p>The data should be updated correctly.</p></li>
+                <li><h3>Believability: </h3>
+                <p>The data should be trustable.</p></li>
+                <li><h3>Interpretability:</h3>
+                <p>The understandability of the data.</p></li>
+
+                
+            </ul>
+            <img style=" padding-left: 60%; margin-top: -500px; height: 400px;" src="../images/dp4.png" alt="">
+            <h2>Major Tasks in Data Preprocessing:</h2>
+            <ul>
+                <li>Data cleaning</li>
+                <li>Data integration</li>
+                <li>Data reduction</li>
+                <li>Data transformation</li>
+            </ul>
+            <ul>
+                <li><h3>Data cleaning:</h3>
+                <p>Data cleaning is the process to remove incorrect data, incomplete data and inaccurate data from the datasets, and it also replaces the missing values. There are some techniques in data cleaning</p></li>
+                <h3>Handling missing values:</h3>
+                <br>
+                <p>Standard values like “Not Available” or “NA” can be used to replace the missing values.
+                    Missing values can also be filled manually but it is not recommended when that dataset is big.
+                <br>The attribute’s mean value can be used to replace the missing value when the data is normally distributed
+                wherein in the case of non-normal distribution median value of the attribute can be used.
+                While using regression or decision tree algorithms the missing value can be replaced by the most probable
+                value.
+                    
+                </p>
+                <h3>Noisy</h3>
+                <p>          Noisy generally means random error or containing unnecessary data points. Here are some of the methods to handle noisy data.</p>
+                
+            </ul>
+            <ul>
+                <h3>Binning:</h3><p>This method is to smooth or handle noisy data. First, the data is sorted then and then the sorted values are separated and stored in the form of bins. There are three methods for smoothing data in the bin. Smoothing by bin mean method: In this method, the values in the bin are replaced by the mean value of the bin; Smoothing by bin median: In this method, the values in the bin are replaced by the median value; Smoothing by bin boundary: In this method, the using minimum and maximum values of the bin values are taken and the values are replaced by the closest boundary value.</p></li>
+                <h3>Regression:</h3><p> This is used to smooth the data and will help to handle data when unnecessary data is present. For the analysis, purpose regression helps to decide the variable which is suitable for our analysis.</p></>
+                <h3>Clustering:</h3><p>This is used for finding the outliers and also in grouping the data. Clustering is generally used in unsupervised learning.</p></>
+                <li><h3>Data integration:</h3><p>          The process of combining multiple sources into a single dataset. The Data integration process is one of the main components in data management. There are some problems to be considered during data integration.</p></li>
+                <h3>Schema integration: </h3><p>Integrates metadata(a set of data that describes other data) from different sources.
+                    <br>
+                    Entity identification problem: Identifying entities from multiple databases. For example, the system or the use should know student _id of one database and student_name of another database belongs to the same entity.
+Detecting and resolving data value concepts: The data taken from different databases while merging  may differ. Like the attribute values from one database may differ from another database. For example, the date format may differ like “MM/DD/YYYY” or “DD/MM/YYYY”.
+
+<li><h3>Data reduction:</h3><p>         This process helps in the reduction of the volume of the data which makes the analysis easier yet produces the same or almost the same result. This reduction also helps to reduce storage space. There are some of the techniques in data reduction are Dimensionality reduction, Numerosity reduction, Data compression.</p>
+
+<h3>Dimensionality reduction: </h3><p>This process is necessary for real-world applications as the data size is big. In this process, the reduction of random variables or attributes is done so that the dimensionality of the data set can be reduced. Combining and merging the attributes of the data without losing its original characteristics. This also helps in the reduction of storage space and computation time is reduced. When the data is highly dimensional the problem called “Curse of Dimensionality” occurs.</p>
+<h3>Numerosity Reduction: </h3>
+<p>In this method, the representation of the data is made smaller by reducing the volume. There will not be any loss of data in this reduction.</p>
+
+</li>
+<li><h3>Data compression:</h3>
+<p>The compressed form of data is called data compression. This compression can be lossless or lossy. When there is no loss of information during compression it is called lossless compression. Whereas lossy compression reduces information but it removes only the unnecessary information.</p></li>
+<li><h3>Transformation</h3><p>       The change made in the format or the structure of the data is called data transformation. This step can be simple or complex based on the requirements. There are some methods in data transformation.</p></li>
+<h3>Smoothing</h3>
+<p>With the help of algorithms, we can remove noise from the dataset and helps in knowing the important features of the dataset. By smoothing we can find even a simple change that helps in prediction.</p>
+<h3>Aggregation: </h3>
+<p>In this method, the data is stored and presented in the form of a summary. The data set which is from multiple sources is integrated into with data analysis description. This is an important step since the accuracy of the data depends on the quantity and quality of the data. When the quality and the quantity of the data are good the results are more relevant.</p>
+<h3>Discretization:</h3>
+<p>The continuous data here is split into intervals. Discretization reduces the data size. For example, rather than specifying the class time, we can set an interval like (3 pm-5 pm, 6 pm-8 pm).</p>
+<h3>Normalization:</h3>
+<p>It is the method of scaling the data so that it can be represented in a smaller range. Example ranging from -1.0 to 1.0. This article was published as a part of the Data Science Blogathon</p>
+<img  style="margin-left: 18%; margin-top: 25px;"
+src="../images/d5.png" alt="">
+                </p>
+            </ul>
+            <h2>Why is Data preprocessing important?</h2>
+            <ul>
+                <li><h3>Accuracy</h3>
+                <p>To check whether the data entered is correct or not.</p></li>
+                <li><h3>Completeness: </h3>
+                <p>To check whether the data is available or not recorded.</p></li>
+                <li><h3>Consistency:</h3>
+                <p>To check whether the same data is kept in all the places that do or do not match.</p></li>
+                <li><h3>Timeliness: </h3>
+                <p>The data should be updated correctly.</p></li>
+                <li><h3>Believability:</h3>
+                <p>The data should be trustable.</p></li>
+                <li><h3>Interpretability: </h3>
+                <p>The understandability of the data.</p></li>
+            </ul>
+            <h2>Data preprocessing steps in machine learning</h2>
+            <h3>Import libraries and the dataset:</h3>
+            <p style="font-family: monospace;">import pandas as pd <br>
+                import numpy as np <br>
+                dataset = pd.read_csv('Datasets.csv') <br>
+                print (data_set) <br>
+                <img src="../images/dp6.png" alt="">
+                <br>
+                <h3>Extracting independent variable:</h3>
+                <br>
+                <img style="padding-left: 35px;" src="../images/dp7.png" alt="">
+                <img style="margin-left: 20px; margin-top: -900px;" src="../images/dp11.png" alt="">
+                </p>
+                <h2>Filling the dataset with the mean value of the attribute:</h2>
+                <p style="font-family: monospace;">from sklearn.preprocessing import Imputer <br> 
+                    imputer= Imputer(missing_values ='NaN', strategy='mean', axis = 0)  <br>
+                    imputerimputer= imputer.fit(x[:, 1:3])  <br>
+                    x[:, 1:3]= imputer.transform(x[:, 1:3])  <br>
+                    x <br>
+                    <img src="../images/dp8.png" alt="">
+                    </p>
+                    <img style="padding-left: 50%;margin-top: -1200px; height: 490px;" src="../images/dp9.png" alt="">
+        </b>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@300&family=Livvic:wght@100&family=Lobster&family=Open+Sans+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Livvic;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-30deg,#fff 0%,#3a78b7 50%,#262626 50%, #4863a0 100% );
+    filter: hue-rotate(120deg);
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+section .box{
+    position: relative;
+    padding: 50px;
+    width: 400px;
+    height: 300p;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+section .box:after{
+content: '';
+position: absolute;
+top: 5px;
+left: 5px;
+right: 5px;
+bottom: 5px;
+border-radius: 5px;
+pointer-events: none;
+background: linear-gradient(to bottom,rgba(255,255,255,0.3 )0%,rgba(255,255,255,0.1)15%,transparent 50%, transparent 85%, rgba(55,255,255,0.3)100% );
+
+}
+section .box .form{
+    position: relative;
+    width: 100%;
+}
+section .box .form h2{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-size: 45px;
+    text-align: center;
+}
+section .box .form .inputbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+section .box .form .inputbox input{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+}
+section .box .form .inputbox input[type="password"]{
+    margin-top: 20px;
+
+
+}
+section .box .form .inputbox input[type="submit"]{
+    background: white;
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: brown;
+    border-radius: 5px;
+    font-weight: 600;
+}
+span{
+    color: white;
+    font-size: 18px;
+
+}
+span a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+span a:hover{
+color: #f9e410;
+}

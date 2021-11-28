@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="../CSS/statistics.css">
+
+</head>
+<body>
+    <div class="content">
+        <div class="heading">
+            <h1>&mdash;Statistics related to Data Science&mdash; </h1>
+        </div>
+        <h2>Statistics
+
+        </h2>
+        <p><b>The most important aspect of any Data Science approach is how the information is processed. ... 
+            <i style="color:midnightblue">Those possibilities in Data Science are known as Statistical Analysis.</i>  Most of us wonder how 
+            can data in the form of text,
+            images, videos, and other highly unstructured
+            formats get easily processed by Machine Learning models.</b></p>
+            <h2 >Use of Statistics in Data Science</h2>
+            <b>
+                <ul>
+                    <li>Statistical features is probably the most used statistics concept in data science. It's often the first stats technique you would apply when exploring a dataset and includes things like bias, variance, mean, median, percentiles, and many others. It's all fairly easy to understand and implement in code!</li>
+                    <li>Statistics is a wide concept limiting not just to what exists but what can be derived out of existing techniques to build something new. Hence, Statistics is very important for Data Science as it helps to understand existing solutions as well as digging out new developments.</li>
+                    <li>Statistics helps in providing a better understanding and accurate description of nature's phenomena.</li>
+                    <li>Statistics helps in collecting appropriate quantitative data.</li>
+                    <li>Statistics helps in the proper and efficient planning of a statistical inquiry in any field of study.</li>
+                </ul>
+            </b>
+            <h2>Terminology</h2>
+            <b><ul>
+                <li><h3>Probability</h3>
+                    <p>Probability is the basic need for understanding the possibilities. To start with let us take a very basic example – What are the chances that Team A is going to win the football match against Team B. To derive this answer, we might require 100 people to give their respective votes – Number of Samples. Based on those votes we can have a chance of which team can win the game.<br>
+                    <span style="padding-left: 30%;color:navy;">Rule of addition : P(A ∪ B) = P(A) + P(B) - P(A ∩ B)<br>
+                    <span style="padding-left: 30%;">Rule of multiplication : P(A ∩ B) = P(A) P(B|A)</span><br>
+                    <span style="padding-left: 30%;">Rule of subtraction: P(A') = 1 - P(A)</span>
+                    </span>
+                    </p>
+
+                </li>
+                <li><h3>Sampling</h3>
+                <p>The sampling as we discussed in the above example is identifying the right set of people.
+                    <br>
+                    There are various types of sampling methods <span style="color: midnightblue;"> Simple random sampling, Systematic sampling, Stratified sampling, Clustered sampling, </span>etc.
+                    Unless otherwise noted, these formulas assume simple random sampling.
+                    <br>
+                    <span font-family: monospace;">1. Sample variance = s2 = Σ ( xi - x )2 / ( n - 1 )<br>
+                        <span >2. Sample mean = x = ( Σ xi ) / n</span><br>
+                        <span >3. Sample standard deviation = s = sqrt [ Σ ( xi - x )2 / ( n - 1 ) ]</span><br>
+                        <span >4. Variance of sample proportion = sp2 = pq / (n - 1)</span><br>
+                        <span >5. Pooled sample proportion = p 
+                            = (p1 * n1 + p2 * n2) / (n1 + n2)
+                </span><br>
+                        <span >6. Pooled sample standard deviation = sp
+                            = sqrt [ (n1 - 1) * s12 + (n2 - 1) * s22 ] / (n1 + n2 - 2) ]
+                    
+                </span><br>
+                        <span >7. Sample correlation coefficient = r
+                            = [ 1 / (n - 1) ] * Σ { [ (xi - x) / sx ] * [ (yi - y) / sy ] }
+                       
+                </span><br>
+                        </span>
+                        <li><h3>Hypotheses Testing</h3></li>
+
+                        <img style="margin-left: 300px;" src="../images/hypothesis.jpg" alt="">
+                        <p>If we know whether to perform some action or not. Will those actions give a positive result or a negative result then we can have an added advantage of doing the right things. <u> Hypotheses Testing gives identifying the situation where the action should be taken or not based on what results will it produce.</u>
+                            <br>
+                            There are other tests as well like A/B Testing, Z Test, T-Test, Null Hypothesis with similar relevance. <br> <br>
+                            <span style=" color: midnightblue;">
+                           1. Standardized test statistic = (Statistic - Parameter) / (Standard deviation of statistic) <br>
+                           2.  One-sample z-test for proportions: z-score = z = (p - P0) / sqrt( p * q / n ) <br>
+
+3. Two-sample z-test for proportions: z-score = z = z = [ (p1 - p2) - d ] / SE <br>
+
+4. One-sample t-test for means: t statistic = t = (x - μ) / SE <br>
+5. Two-sample t-test for means: t statistic = t = [ (x1 - x2) - d ] / SE <br>
+6. Matched-sample t-test for means: t statistic = t = [ (x1 - x2) - D ] / SE = (d - D) / SE <br>
+7. Chi-square test statistic = Χ2 = Σ[ (Observed - Expected)2 / Expected ]
+</span>
+                         </p>
+                </p>
+                </li>
+                <li><h3>Regression</h3>
+
+                    <img style="margin-left: 100px;" src="../images/understanding_of_linear_regression_with_python_1.png" alt="">
+                <p>
+                    The regression in simple terms is finding out a relationship between the independent and dependent variables. Regression can be of two types broadly – Linear Regression, Multi Linear Regression. <br><br>
+                   <span style="color:navy;">Linear Regression : Y = aX + C <br>
+Multi Linear Regression : Y = aX + bX1 + cX2 + …. + C <br> <br>
+
+</span> 
+Statistics is a wide concept limiting not just to what exists but what can be derived out of existing techniques to build something new. Hence, Statistics is very important for Data Science as it helps to understand existing solutions as well as digging out new developments.
+<br> <br>
+<span style="color: midnightblue;">1. Simple linear regression line: ŷ = b0 + b1x <br>
+   2. Regression coefficient = b1 = Σ [ (xi - x) (yi - y) ] / Σ [ (xi - x)2] <br>
+    3. Regression slope intercept = b0 = y - b1 * x <br>
+    4. Regression coefficient = b1 = r * (sy / sx) <br>
+    5. Standard error of regression slope = sb1
+         = sqrt [ Σ(yi - ŷi)2 / (n - 2) ] / sqrt [ Σ(xi - x)2 ] <br>
+    </span>
+    <li><h3>Degrees of Freedom</h3>
+    </li>
+    <p>        The correct formula for degrees of freedom (DF) depends on the situation (the nature of the test statistic, the number of samples, underlying assumptions, etc.). <br>
+     <span style="color: midnightblue;">
+        <br>  One-sample t-test: DF = n - 1 <br>
+        Two-sample t-test: DF = (s12/n1 + s22/n2)2 / { [ (s12 / n1)2 / (n1 - 1) ] + [ (s22 / n2)2 / (n2 - 1) ] } <br>
+        Two-sample t-test, pooled standard error: DF = n1 + n2 - 2 <br>
+        Simple linear regression, test slope: DF = n - 2 <br>
+        Chi-square goodness of fit test: DF = k - 1 <br>
+        Chi-square test for homogeneity: DF = (r - 1) * (c - 1) <br>
+        Chi-square test for independence: DF = (r - 1) * (c - 1) <br>
+        </span> <br> <br> <br>
+    </p>
+                </p></li>
+            </ul></b>
+            
+    </div>
+    
+</body>
+</html>
